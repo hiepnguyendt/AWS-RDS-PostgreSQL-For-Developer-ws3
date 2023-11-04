@@ -1,0 +1,85 @@
+[
+{
+	"uri": "/",
+	"title": "AWS RDS PostgreSQL for Developers",
+	"tags": [],
+	"description": "",
+	"content": "AWS RDS PostgreSQL for Developers This workshop is intended for developers who want to learn how to use Amazon Relational Database Service (RDS) for PostgreSQL to build and deploy applications.\nPrerequisites: Completed first lab about AWS RDS PostgreSQL Basic knowledge of SQL Experience with a programming language such as Python, Java, or PHP Content Introduce Preparation step Code example for database connection Deploying RDS PostgreSQL application Monitoring \u0026amp; Logs Backup and restore Clean up "
+},
+{
+	"uri": "/1-introduce/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": "Amazon Relational Database Service (RDS) for PostgreSQL is a managed database service that makes it easy to set up, operate, and scale PostgreSQL databases in the cloud. With RDS, you don\u0026rsquo;t have to worry about managing the underlying infrastructure—RDS takes care of provisioning, patching, backing up, and monitoring your databases for you. This frees you up to focus on developing and running your applications.\nAWS RDS for PostgreSQL is a popular choice for developers because it offers a wide range of features and benefits, including:\nScalability: RDS makes it easy to scale your PostgreSQL databases up or down as needed. You can add or remove instances, change instance classes, and modify storage capacity without having to downtime your applications. High availability: RDS provides high availability for your PostgreSQL databases with features such as read replicas, multi-AZ deployments, and automatic point-in-time recovery. Security: RDS offers a variety of security features to help protect your PostgreSQL databases, including encryption, access control, and auditing. Cost-effectiveness: RDS is a cost-effective way to run PostgreSQL databases in the cloud. You only pay for the resources you use, and you can save money by using reserved instances. In addition to these core features, RDS for PostgreSQL also offers a number of other features that are specifically designed for developers, such as:\nIntegrated tools: RDS provides a number of integrated tools that can help you develop, manage, and monitor your PostgreSQL databases, such as the RDS console, the AWS CLI, and the RDS Data API. Support for popular development languages and frameworks: RDS for PostgreSQL supports a wide range of popular development languages and frameworks, including Java, Python, PHP, Ruby, and Node.js. Compatibility with existing PostgreSQL applications: RDS for PostgreSQL is compatible with existing PostgreSQL applications, so you can migrate your applications to RDS without having to make any changes. Overall, AWS RDS for PostgreSQL is a powerful and flexible managed database service that offers a wide range of features and benefits for developers. If you are looking for a way to easily set up, operate, and scale PostgreSQL databases in the cloud, then AWS RDS for PostgreSQL is a great choice.\nHere are some specific examples of how developers can use AWS RDS for PostgreSQL:\nDevelop and test new applications: Developers can use RDS for PostgreSQL to quickly and easily create new PostgreSQL databases for development and testing. They can then use the integrated tools to manage and monitor their databases. Deploy and scale production applications: Developers can deploy their production PostgreSQL applications to RDS for PostgreSQL and scale them up or down as needed. They can also use the high availability features to ensure that their applications are always up and running. Migrate existing applications to RDS: Developers can migrate their existing PostgreSQL applications to RDS for PostgreSQL with minimal downtime. They can then use the managed service features to free up their time to focus on developing and running their applications. "
+},
+{
+	"uri": "/2-preparation/2-1-setupenv/",
+	"title": "Set up enviroment",
+	"tags": [],
+	"description": "",
+	"content": " Using MobaXterm to SSH to EC2 instances Install Node Version Manager (nvm) curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash Active nvm and install Nodejs v16 . ~/.nvm/nvm.sh\rnvm install 16 Install Git sudo yum install git -y Verify packages installation npm -v\rnode -v\rgit -v Config your AWS CLI Install Nodemon npm install --save-dev nodemon "
+},
+{
+	"uri": "/3-codeexamplefordbconnection/3-1-sampledbconnect/",
+	"title": "Simple database connection",
+	"tags": [],
+	"description": "",
+	"content": "Deploy simple code To clone the repository from GitHub, you can use the following command: git clone https://github.com/hiepnguyendt/sample-database-connection.git Eit file .env with your database credential nano .env DB_USER: \u0026lsquo;your username\u0026rsquo; DB_PASS: \u0026lsquo;your password\u0026rsquo; DB_HOST: \u0026rsquo;endpoint your RDS PostgreSQL' DB_PORT: \u0026lsquo;5432\u0026rsquo; Run the code: npm start Now, you are connecting to RDS PostgreSQL with:\nUser: masteruser Database: pglab Port: 5432 "
+},
+{
+	"uri": "/3-codeexamplefordbconnection/3-2-autofetchingcredential/",
+	"title": "Auto-fetching instance credentials and connecting",
+	"tags": [],
+	"description": "",
+	"content": "Deploy the example code To clone the repository from GitHub, you can use the following command: git clone https://github.com/hiepnguyendt/Auto-fetching-instance-credentialsand-connecting.git Eit file .env with your database credential nano .env AWS_REGION: your region Run the code: npm start Now, you are connecting to RDS PostgreSQL by Auto-fetching instance credentials from AWS Secret Manager.\nIf you got error when you run code. You should check AWS_regin in the AWS CLI\n"
+},
+{
+	"uri": "/2-preparation/2-2-ssm/",
+	"title": "AWS Secret Manager",
+	"tags": [],
+	"description": "",
+	"content": "Create an AWS Secrets Manager secret Secrets Manager enables you to replace hardcoded credentials in your code, including passwords, with an API call to Secrets Manager to retrieve the secret programmatically. This helps ensure the secret can\u0026rsquo;t be compromised by someone examining your code, because the secret no longer exists in the code.\nOpen the AWS Secrets Manager service console\nChoose Store a new secret.\nOn the Choose secret type page, choose Credentials for RDS database.\nInput the User name (should be masteruser) Input your Password that you provided when you created the DB cluster previously. Next, in the Select which RDS database this secret will access section, choose the DB instance identifier you assigned to your instance (e.g. rdspg-fcj-labs). Click Next. Name the secret secretPostgresqlMasterUser and provide a relevant description for the secret, then click Next. Be sure to use the exact name (case-sensitive) of secretPostgresqlMasterUser to avoid having to edit some of the lab scripts later.\nFinally, in the Configure automatic rotation section, leave the option of Disable automatic rotation selected. In a production environment you will want to use database credentials that rotate automatically for additional security. Click Next.\nIn the Review section you have the ability to check the configuration parameters for your secret, before it gets created. Additionally, you can retrieve sample code in popular programming languages, so you can easily retrieve secrets into your application. Click Store at the bottom of the screen.\nOnce created, identify the ARN of the newly created secret. This value will be needed in subsequent labs. In the list of Secrets in the console, click on the name of the newly created secret.\n"
+},
+{
+	"uri": "/2-preparation/",
+	"title": "Preparation step",
+	"tags": [],
+	"description": "",
+	"content": "This section contains following tasks: Set up enviroment AWS Secret Manager "
+},
+{
+	"uri": "/3-codeexamplefordbconnection/",
+	"title": "Code example for database connection",
+	"tags": [],
+	"description": "",
+	"content": "The labs in this section provide example implementations for programmatic access to RDS PostgreSQL instances. These can serve as a basic reference which can be used for actual implementations in applications.\nSimple database connection: In the first example, we create a database connection to the RDS PostgreSQL instance. The connection properties (DB endpoint, DB port, username and password) are fetched from environment variables. Auto-fetching instance credentials and connecting: In the second example, we create a connection to the RDS PostgreSQL instance after fetching the connection properties by describing the RDS instance and fetching credentials from Secrets Manager using the AWS SDK. The AWS region is fetched from the AWS_REGION environment variable. "
+},
+{
+	"uri": "/4-deploynodejsapp/",
+	"title": "Deploying AWS FCJ User Management System",
+	"tags": [],
+	"description": "",
+	"content": "AWS FCJ User Management System – Nodejs, Express, AWS RDS PostgreSQL, AWS Secret Manager \u0026amp; Handlebars, A user management system is a crucial component of many web applications. It allows admin manage their account information. In this tutorial, we will build a simple user management system using Node.js, Express, RDS PostgreSQL, and Handlebars.\nNode.js is a JavaScript runtime environment that allows us to build scalable and efficient server-side applications. Express is a lightweight web framework for Node.js that makes it easy to develop and maintain web applications. RDS PostgreSQL is a managed database service from Amazon Web Services (AWS) that offers a reliable, scalable, and secure way to run PostgreSQL databases. AWS Secrets Manager is a service that helps you manage secrets, such as database passwords, API keys, and other sensitive information. This makes it easy to keep your secrets safe and secure. Handlebars is a templating engine that makes it easy to generate dynamic HTML pages. Deploy the application To clone the repository from GitHub, you can use the following command: git clone https://github.com/hiepnguyendt/fcj-management-user.git Eit file .env with your database credential nano .env AWS_REGION: your region Run the code: npm start Now, you are connecting to RDS PostgreSQL by Auto-fetching instance credentials from AWS Secret Manager.\nIf you got error when you run code. You should check AWS_regin in the AWS CLI\nGo to back pgAdmin4 to query data Create table fcj_user ***You can using following SQL scripts below to create table *** SQL Scripts\rCREATE TABLE fcj_user\r(\rid serial not null PRIMARY KEY, --create an auto-increment column id in a database table\rfirst_name VARCHAR(45) NOT NULL,\rlast_name VARCHAR(45) NOT NULL,\remail VARCHAR(150) NOT NULL UNIQUE,\rphone VARCHAR(15) NOT NULL,\rcourses VARCHAR(150) NOT NULL,\rstatus VARCHAR(10) NOT NULL DEFAULT \u0026#39;active\u0026#39;\r) Insert data into fcj_user table ***You can using following SQL scripts below to insert data into table *** SQL Scripts\rINSERT INTO fcj_user\r(first_name, last_name, email, phone, courses, status)\rVALUES\r(\u0026#39;Amanda\u0026#39;, \u0026#39;Nunes\u0026#39;, \u0026#39;anunes@ufc.com\u0026#39;, \u0026#39;012345678910\u0026#39;, \u0026#39;AWS Certified Solutions Architect - Associate \u0026#39;, \u0026#39;inactive\u0026#39;),\r(\u0026#39;Alexander\u0026#39;, \u0026#39;Volkanovski\u0026#39;, \u0026#39;avolkanovski@ufc.com\u0026#39;, \u0026#39;012345678910\u0026#39;, \u0026#39;AWS Certified Developer - Associate\u0026#39;, \u0026#39;temp\u0026#39;),\r(\u0026#39;Khabib\u0026#39;, \u0026#39;Nurmagomedov\u0026#39;, \u0026#39;knurmagomedov@ufc.com\u0026#39;, \u0026#39;012345678910\u0026#39;, \u0026#39;AWS Certified Advanced Networking - Specialty\u0026#39;,\u0026#39;active\u0026#39;),\r(\u0026#39;Kamaru\u0026#39;, \u0026#39;Usman\u0026#39;, \u0026#39;kusman@ufc.com\u0026#39;, \u0026#39;012345678910\u0026#39;, \u0026#39;AWS Certified Data Analytics – Specialty\u0026#39;,\u0026#39;active\u0026#39;),\r(\u0026#39;Israel\u0026#39;, \u0026#39;Adesanya\u0026#39;, \u0026#39;iadesanya@ufc.com\u0026#39;, \u0026#39;012345678910\u0026#39;, \u0026#39;AWS Certified Database – Specialty\u0026#39;,\u0026#39;active\u0026#39;),\r(\u0026#39;Henry\u0026#39;, \u0026#39;Cejudo\u0026#39;, \u0026#39;hcejudo@ufc.com\u0026#39;, \u0026#39;012345678910\u0026#39;, \u0026#39;AWS Certified Solutions Architect - Associate\u0026#39;,\u0026#39;active\u0026#39;),\r(\u0026#39;Valentina\u0026#39;, \u0026#39;Shevchenko\u0026#39;, \u0026#39;vshevchenko@ufc.com\u0026#39;, \u0026#39;012345678910\u0026#39;, \u0026#39;AWS Certified Advanced Networking - Specialty\u0026#39;, \u0026#39;inactive\u0026#39;) Check EC2 Instance status: Make sure your EC2 Instance is running and functioning properly. Test the application in the browser: Open a web browser and enter the IP address or domain name of the EC2 Instance, followed by port 5000 (for example: http:// :5000). This will make a connection to your application running on port 5000.\nTest results: The browser will display your application if everything is configured correctly and the EC2 Instance is working. If not, you need to recheck the previous steps to identify the problem and fix it.\nhttp://\u0026lt;IP address or domain name\u0026gt;:5000 Congratulation! You have built AWS FCJ User Management System on Amazon Web Services.\n"
+},
+{
+	"uri": "/5-cleanup/",
+	"title": "Clean up ",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
