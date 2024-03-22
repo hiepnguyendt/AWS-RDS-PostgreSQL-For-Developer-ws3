@@ -5,6 +5,7 @@
     <link>/5-cleanup/</link>
     <description>Recent content in Clean up  on AWS System Manager</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/5-cleanup/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="/5-cleanup/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

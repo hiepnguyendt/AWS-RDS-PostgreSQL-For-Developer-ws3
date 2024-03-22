@@ -4,7 +4,7 @@
 	"title": "AWS RDS PostgreSQL for Developers",
 	"tags": [],
 	"description": "",
-	"content": "AWS RDS PostgreSQL for Developers This workshop is intended for developers who want to learn how to use Amazon Relational Database Service (RDS) for PostgreSQL to build and deploy applications.\nPrerequisites: Completed first lab about AWS RDS PostgreSQL Basic knowledge of SQL Experience with a programming language such as Python, Java, or PHP Content Introduce Preparation step Code example for database connection Deploying RDS PostgreSQL application Monitoring \u0026amp; Logs Backup and restore Clean up "
+	"content": "AWS RDS PostgreSQL for Developers This workshop is intended for developers who want to learn how to use Amazon Relational Database Service (RDS) for PostgreSQL to build and deploy applications.\nPrerequisites: Completed first lab about AWS RDS PostgreSQL Basic knowledge of SQL Experience with a programming language such as Python, Java, or PHP Content Introduce Preparation step Code example for database connection Deploying RDS PostgreSQL application Clean up "
 },
 {
 	"uri": "/1-introduce/",
@@ -67,7 +67,7 @@
 	"title": "Clean up ",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "\rPlease make sure that you have delete all resourses and service created in this lab before close your AWS console\n"
 },
 {
 	"uri": "/categories/",

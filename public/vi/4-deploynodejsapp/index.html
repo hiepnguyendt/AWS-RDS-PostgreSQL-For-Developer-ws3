@@ -3,30 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Hugo 0.123.1">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Các bước chuẩn bị :: AWS System Manager</title>
+    <title>Triển khai Hệ thống quản lý người dùng AWS FCJ :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1699108682" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1699108682" rel="stylesheet">
-    <link href="/css/hybrid.css?1699108682" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1699108682" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1699108682" rel="stylesheet">
-    <link href="/css/auto-complete.css?1699108682" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1699108682" rel="stylesheet">
-    <link href="/css/theme.css?1699108682" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1699108682" rel="stylesheet">
+    <link href="/css/nucleus.css?1711091711" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1711091711" rel="stylesheet">
+    <link href="/css/hybrid.css?1711091711" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1711091711" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1711091711" rel="stylesheet">
+    <link href="/css/auto-complete.css?1711091711" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1711091711" rel="stylesheet">
+    <link href="/css/theme.css?1711091711" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1711091711" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1699108682" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1711091711" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1699108682"></script>
+    <script src="/js/jquery-3.3.1.min.js?1711091711"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1699108682"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1699108682"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1711091711"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1711091711"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1699108682"></script>
+<script type="text/javascript" src="/js/search.js?1711091711"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/vi/1-introduce/" title="Giới thiệu" class="dd-item 
+    <li data-nav-id="/vi/1-introduce/" title="Giới thiệu" class="dd-item 
         
         
         
         ">
       <a href="/vi/1-introduce/">
-           <b> 1. </b> Giới thiệu
+           <b> 1. </b> Giới thiệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,65 +108,13 @@
  
   
     
-    <li data-nav-id="/vi/4-deploynodejsapp/" title="Các bước chuẩn bị" class="dd-item 
-        
-        active
-        
-        ">
-      <a href="/vi/4-deploynodejsapp/">
-           <b> 2. </b> Các bước chuẩn bị
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/5-cleanup/" title="Quản lý session logs" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/5-cleanup/">
-           <b> 4. </b> Quản lý session logs
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/2-preparation/" title="Port Forwarding" class="dd-item 
+    <li data-nav-id="/vi/2-preparation/" title="Các bước chuẩn bị" class="dd-item 
         
         
         
         ">
       <a href="/vi/2-preparation/">
-           <b> 5. </b> Port Forwarding
+           <b> 2. </b> Các bước chuẩn bị
           
             <i class="fas fa-check read-icon"></i>
           
@@ -191,13 +139,13 @@
  
   
     
-    <li data-nav-id="/vi/2-preparation/2-1-setupenv/" title="Port Forwarding" class="dd-item 
+    <li data-nav-id="/vi/2-preparation/2-1-setupenv/" title="Thiết lập môi trường" class="dd-item 
         
         
         
         ">
       <a href="/vi/2-preparation/2-1-setupenv/">
-           <b> 5. </b> Port Forwarding
+           <b> 2.1. </b> Thiết lập môi trường
           
             <i class="fas fa-check read-icon"></i>
           
@@ -219,13 +167,13 @@
  
   
     
-    <li data-nav-id="/vi/2-preparation/2-2-ssm/" title="Port Forwarding" class="dd-item 
+    <li data-nav-id="/vi/2-preparation/2-2-ssm/" title="AWS Secret Manager" class="dd-item 
         
         
         
         ">
       <a href="/vi/2-preparation/2-2-ssm/">
-           <b> 5. </b> Port Forwarding
+           <b> 2.2.</b> AWS Secret Manager
           
             <i class="fas fa-check read-icon"></i>
           
@@ -254,13 +202,13 @@
  
   
     
-    <li data-nav-id="/vi/3-codeexamplefordbconnection/" title="Dọn dẹp tài nguyên  " class="dd-item 
+    <li data-nav-id="/vi/3-codeexamplefordbconnection/" title="Ví dụ về code dùng để kết nối cơ sở dữ liệu" class="dd-item 
         
         
         
         ">
       <a href="/vi/3-codeexamplefordbconnection/">
-          <b>6. </b>Dọn dẹp tài nguyên  
+           <b> 3. </b> Ví dụ về code dùng để kết nối cơ sở dữ liệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -285,13 +233,13 @@
  
   
     
-    <li data-nav-id="/vi/3-codeexamplefordbconnection/3-1-sampledbconnect/" title="Dọn dẹp tài nguyên  " class="dd-item 
+    <li data-nav-id="/vi/3-codeexamplefordbconnection/3-1-sampledbconnect/" title="Kết nối cơ sở dữ liệu đơn giản" class="dd-item 
         
         
         
         ">
       <a href="/vi/3-codeexamplefordbconnection/3-1-sampledbconnect/">
-          <b>6. </b>Dọn dẹp tài nguyên  
+           <b> 3.1. </b> Kết nối cơ sở dữ liệu đơn giản
           
             <i class="fas fa-check read-icon"></i>
           
@@ -313,13 +261,13 @@
  
   
     
-    <li data-nav-id="/vi/3-codeexamplefordbconnection/3-2-autofetchingcredential/" title="Dọn dẹp tài nguyên  " class="dd-item 
+    <li data-nav-id="/vi/3-codeexamplefordbconnection/3-2-autofetchingcredential/" title="Tự động tìm nạp thông tin xác thực và kết nối" class="dd-item 
         
         
         
         ">
       <a href="/vi/3-codeexamplefordbconnection/3-2-autofetchingcredential/">
-          <b>6. </b>Dọn dẹp tài nguyên  
+           <b> 3.2. </b> Tự động tìm nạp thông tin xác thực và kết nối
           
             <i class="fas fa-check read-icon"></i>
           
@@ -334,6 +282,58 @@
           
         
         </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-deploynodejsapp/" title="Triển khai Hệ thống quản lý người dùng AWS FCJ" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/vi/4-deploynodejsapp/">
+           <b> 4. </b> Triển khai Hệ thống quản lý người dùng AWS FCJ
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-cleanup/" title="Xóa tài nguyên " class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/5-cleanup/">
+           <b> 5. </b> Xóa tài nguyên 
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
               
     </li>
   
@@ -477,7 +477,7 @@
             
           
           
-            <a href='/vi/'>Session Management</a> > Các bước chuẩn bị
+            <a href='/vi/'>AWS RDS PostgreSQL for Developers</a> > Triển khai Hệ thống quản lý người dùng AWS FCJ
           
         
           
@@ -492,7 +492,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#nôi-dung">Nội dung</a></li>
+        <li></li>
       </ul>
     </li>
   </ul>
@@ -512,7 +512,7 @@
           
             <h1>
               
-              Các bước chuẩn bị
+              Triển khai Hệ thống quản lý người dùng AWS FCJ
             </h1>
           
 
@@ -520,21 +520,116 @@
 
 
 
-	
-<div class="notices info" ><p>Bạn cần tạo sẵn 1 Linux instance thuộc public subnet và 1 Window instance thuộc private subnet để thực hiện bài thực hành này.</p>
+	<h4 id="aws-fcj-user-management-system--nodejs-express-aws-rds-postgresql-aws-secret-manager--handlebars">AWS FCJ User Management System – Nodejs, Express, AWS RDS PostgreSQL, AWS Secret Manager &amp; Handlebars,</h4>
+<p>Hệ thống quản lý người dùng là một thành phần quan trọng của nhiều ứng dụng web. Nó cho phép quản trị viên quản lý thông tin tài khoản của họ. Trong hướng dẫn này, chúng tôi sẽ xây dựng một hệ thống quản lý người dùng đơn giản bằng cách sử dụng Node.js, Express, RDS PostgreSQL và Handlebars.</p>
+<ul>
+<li><strong>Node.js</strong> là một nền tảng phát triển ứng dụng được xây dựng trên JavaScript runtime của Chrome, cho phép bạn chạy mã JavaScript ở phía máy chủ. Nó cung cấp một môi trường thực thi đa luồng, không đồng bộ và có khả năng xử lý sự kiện, cho phép bạn xây dựng các ứng dụng mạng phía máy chủ hiệu quả.</li>
+<li><strong>Express</strong> là một framework ứng dụng web phía máy chủ được xây dựng trên Node.js. Nó được thiết kế để đơn giản hóa việc xây dựng ứng dụng web và API bằng cách cung cấp các phương thức và công cụ giúp quản lý các yêu cầu (request) và phản hồi (response) trong ứng dụng web.</li>
+<li><strong>RDS PostgreSQL</strong> là một dịch vụ cơ sở dữ liệu được quản lý từ Amazon Web Services (AWS) cung cấp một cách thức đáng tin cậy, có thể mở rộng và an toàn để chạy cơ sở dữ liệu PostgreSQL.</li>
+<li><strong>AWS Secrets Manager</strong> là dịch vụ giúp bạn quản lý các bí mật, chẳng hạn như mật khẩu cơ sở dữ liệu, khóa API và các thông tin nhạy cảm khác. Điều này giúp bạn dễ dàng giữ bí mật của mình an toàn và bảo mật.</li>
+<li><strong>Handlebars</strong> là một công cụ tạo khuôn mẫu giúp dễ dàng tạo các trang HTML động.</li>
+</ul>
+<p><img alt="app" src="/images/3/0.jpg"></p>
+<h4 id="triển-khai-ứng-dụng">Triển khai ứng dụng</h4>
+<ol>
+<li>Để clone code từ GitHub, bạn có thể sử dụng lệnh sau:</li>
+</ol>
+<pre tabindex="0"><code>git clone https://github.com/hiepnguyendt/fcj-management-user.git
+</code></pre><p><img alt="app" src="/images/3/1.png"></p>
+<ol start="2">
+<li>Chỉnh sửa file <strong>.env</strong> với thông tin xác thực cơ sở dữ liệu của bạn</li>
+</ol>
+<pre tabindex="0"><code>nano .env
+</code></pre><p><img alt="app" src="/images/3/2.png"></p>
+<ul>
+<li><strong>AWS_REGION</strong>: your region</li>
+</ul>
+<p><img alt="autofetching" src="/images/2.2/3.png"></p>
+<ol start="3">
+<li>Chạy code:</li>
+</ol>
+<pre tabindex="0"><code>npm start
+</code></pre><p><img alt="app" src="/images/3/3.png"></p>
+<p><em><strong>Bây giờ, bạn đang kết nối với RDS PostgreSQL bằng cách Tự động tìm nạp thông tin xác thực instance từ AWS Secret Manager.</strong></em></p>
+
+<div class="notices note" ><p>Nếu bạn gặp lỗi khi chạy mã. Bạn nên kiểm tra AWS_region trong AWS CLI</p>
 </div>
 
-<p>Để tìm hiểu cách tạo các EC2 instance và VPC với public/private subnet các bạn có thể tham khảo bài lab :</p>
+<p>4.Trở lại giao diện <strong>pgAdmin4</strong> để truy vấn dữ liệu</p>
 <ul>
-<li><a href="https://000004.awsstudygroup.com/vi/">Giới thiệu về Amazon EC2</a></li>
-<li><a href="https://000003.awsstudygroup.com/vi/">Làm việc với Amazon VPC</a></li>
+<li>Create table <strong><code>fcj_user</code></strong></li>
 </ul>
-<p>Để sử dụng System Manager để quản lý window instance nói riêng và các instance nói chung của chúng ta trên AWS, ta cần phải cung cấp quyền cho các instance của chúng ta có thể làm việc với System Manager.Trong phần chuẩn bị này, chúng ta cũng sẽ tiến hành tạo IAM Role để cấp quyền cho các instance có thể làm việc với System Manager.</p>
-<h3 id="nôi-dung">Nội dung</h3>
+<p><em><strong>Bạn có thể sử dụng các tập lệnh SQL bên dưới để tạo bảng</strong></em>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	SQL Scripts
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre tabindex="0"><code>CREATE TABLE fcj_user
+(
+    id serial not null PRIMARY KEY, --create an auto-increment column id in a database table
+    first_name VARCHAR(45) NOT NULL,
+    last_name VARCHAR(45) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    phone VARCHAR(15) NOT NULL,
+    courses VARCHAR(150) NOT NULL,
+    status VARCHAR(10) NOT NULL DEFAULT &#39;active&#39;
+) 
+</code></pre><p><img alt="app" src="/images/3/4.png"></p>
+
+    </div>
+</div></p>
 <ul>
-<li><a href="2.1-createec2/">Chuẩn bị VPC và EC2 Instance</a></li>
-<li><a href="2.2-createiamrole/">Tạo IAM Role</a></li>
+<li>Insert data into <strong>fcj_user table</strong></li>
 </ul>
+<p><em><strong>Bạn có thể sử dụng các tập lệnh SQL bên dưới để chèn dữ liệu vào bảng</strong></em>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	SQL Scripts
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre tabindex="0"><code>INSERT INTO fcj_user
+(first_name, last_name, email, phone, courses, status)
+VALUES
+(&#39;Amanda&#39;, &#39;Nunes&#39;, &#39;anunes@ufc.com&#39;, &#39;012345678910&#39;, &#39;AWS Certified Solutions Architect - Associate &#39;, &#39;inactive&#39;),
+(&#39;Alexander&#39;, &#39;Volkanovski&#39;, &#39;avolkanovski@ufc.com&#39;, &#39;012345678910&#39;, &#39;AWS Certified Developer - Associate&#39;, &#39;temp&#39;),
+(&#39;Khabib&#39;, &#39;Nurmagomedov&#39;, &#39;knurmagomedov@ufc.com&#39;, &#39;012345678910&#39;, &#39;AWS Certified Advanced Networking - Specialty&#39;,&#39;active&#39;),
+(&#39;Kamaru&#39;, &#39;Usman&#39;, &#39;kusman@ufc.com&#39;, &#39;012345678910&#39;, &#39;AWS Certified Data Analytics – Specialty&#39;,&#39;active&#39;),
+(&#39;Israel&#39;, &#39;Adesanya&#39;, &#39;iadesanya@ufc.com&#39;, &#39;012345678910&#39;, &#39;AWS Certified Database – Specialty&#39;,&#39;active&#39;),
+(&#39;Henry&#39;, &#39;Cejudo&#39;, &#39;hcejudo@ufc.com&#39;, &#39;012345678910&#39;, &#39;AWS Certified Solutions Architect - Associate&#39;,&#39;active&#39;),
+(&#39;Valentina&#39;, &#39;Shevchenko&#39;, &#39;vshevchenko@ufc.com&#39;, &#39;012345678910&#39;, &#39;AWS Certified Advanced Networking - Specialty&#39;, &#39;inactive&#39;)
+</code></pre><p><img alt="app" src="/images/3/5.png"></p>
+
+    </div>
+</div></p>
+<ol start="5">
+<li>Kiểm tra <strong>EC2 Instance status</strong>: Đảm bảo EC2 instance của bạn đang chạy và hoạt động bình thường.</li>
+</ol>
+<ul>
+<li>
+<p>Kiểm tra ứng dụng trong trình duyệt: Mở trình duyệt web và nhập địa chỉ IP hoặc tên miền của EC2 instance, sau đó là port 5000 (ví dụ: http://<!-- raw HTML omitted --> :5000). Điều này sẽ tạo kết nối tới ứng dụng của bạn chạy trên port 5000.</p>
+</li>
+<li>
+<p>Test results: Trình duyệt sẽ hiển thị ứng dụng của bạn nếu mọi thứ được cấu hình đúng và EC2 instance đang hoạt động. Nếu không, bạn cần kiểm tra lại các bước trước đó để xác định vấn đề và khắc phục.</p>
+</li>
+</ul>
+<pre tabindex="0"><code>http://&lt;IP address or domain name&gt;:5000
+</code></pre><p><img alt="app" src="/images/3/6.png"></p>
+<p><em><strong>Chúc mừng! Bạn đã xây dựng Hệ thống quản lý người dùng AWS FCJ trên Amazon Web Services.</strong></em></p>
 
 
 
@@ -594,42 +689,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                 
                 
 
@@ -721,6 +780,42 @@
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -734,10 +829,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/vi/1-introduce/" title="Giới thiệu"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/vi/3-codeexamplefordbconnection/3-2-autofetchingcredential/" title="Tự động tìm nạp thông tin xác thực và kết nối"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/vi/5-cleanup/" title="Quản lý session logs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/vi/5-cleanup/" title="Xóa tài nguyên " style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -747,19 +842,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1699108682"></script>
-    <script src="/js/perfect-scrollbar.min.js?1699108682"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1699108682"></script>
-    <script src="/js/jquery.sticky.js?1699108682"></script>
-    <script src="/js/featherlight.min.js?1699108682"></script>
-    <script src="/js/highlight.pack.js?1699108682"></script>
+    <script src="/js/clipboard.min.js?1711091711"></script>
+    <script src="/js/perfect-scrollbar.min.js?1711091711"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1711091711"></script>
+    <script src="/js/jquery.sticky.js?1711091711"></script>
+    <script src="/js/featherlight.min.js?1711091711"></script>
+    <script src="/js/highlight.pack.js?1711091711"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1699108682"></script>
-    <script src="/js/learn.js?1699108682"></script>
-    <script src="/js/hugo-learn.js?1699108682"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1711091711"></script>
+    <script src="/js/learn.js?1711091711"></script>
+    <script src="/js/hugo-learn.js?1711091711"></script>
 
-    <link href="/mermaid/mermaid.css?1699108682" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1699108682"></script>
+    <link href="/mermaid/mermaid.css?1711091711" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1711091711"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Hugo 0.123.1">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Deploying AWS FCJ User Management System :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1699108682" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1699108682" rel="stylesheet">
-    <link href="/css/hybrid.css?1699108682" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1699108682" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1699108682" rel="stylesheet">
-    <link href="/css/auto-complete.css?1699108682" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1699108682" rel="stylesheet">
-    <link href="/css/theme.css?1699108682" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1699108682" rel="stylesheet">
+    <link href="/css/nucleus.css?1711091711" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1711091711" rel="stylesheet">
+    <link href="/css/hybrid.css?1711091711" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1711091711" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1711091711" rel="stylesheet">
+    <link href="/css/auto-complete.css?1711091711" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1711091711" rel="stylesheet">
+    <link href="/css/theme.css?1711091711" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1711091711" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1699108682" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1711091711" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1699108682"></script>
+    <script src="/js/jquery-3.3.1.min.js?1711091711"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1699108682"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1699108682"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1711091711"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1711091711"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1699108682"></script>
+<script type="text/javascript" src="/js/search.js?1711091711"></script>
 
     
   </div>
@@ -328,7 +328,7 @@
         
         ">
       <a href="/5-cleanup/">
-           <b> 7. </b> Clean up 
+           <b> 5. </b> Clean up 
           
             <i class="fas fa-check read-icon"></i>
           
@@ -529,27 +529,30 @@
 <li><strong>AWS Secrets Manager</strong> is a service that helps you manage secrets, such as database passwords, API keys, and other sensitive information. This makes it easy to keep your secrets safe and secure.</li>
 <li><strong>Handlebars</strong> is a templating engine that makes it easy to generate dynamic HTML pages.</li>
 </ul>
-<p><img src="/images/3/0.jpg" alt="app"></p>
+<p><img alt="app" src="/images/3/0.jpg"></p>
 <h4 id="deploy-the-application">Deploy the application</h4>
 <ol>
-<li>To clone the repository from GitHub, you can use the following command:</li>
-</ol>
+<li>To clone the repository from GitHub, you can use the following command:
 <pre tabindex="0"><code>git clone https://github.com/hiepnguyendt/fcj-management-user.git
-</code></pre><p><img src="/images/3/1.png" alt="app"></p>
+</code></pre></li>
+</ol>
+<p><img alt="app" src="/images/3/1.png"></p>
 <ol start="2">
-<li>Eit file <strong>.env</strong> with your database credential</li>
-</ol>
+<li>Eit file <strong>.env</strong> with your database credential
 <pre tabindex="0"><code>nano .env
-</code></pre><p><img src="/images/3/2.png" alt="app"></p>
-<ul>
-<li><strong>AWS_REGION</strong>: your region</li>
-</ul>
-<p><img src="/images/2.2/3.png" alt="autofetching"></p>
-<ol start="3">
-<li>Run the code:</li>
+</code></pre></li>
 </ol>
+<p><img alt="app" src="/images/3/2.png"></p>
+<ul>
+<li><strong>AWS_REGION</strong>: your region
+<img alt="autofetching" src="/images/2.2/3.png"></li>
+</ul>
+<ol start="3">
+<li>Run the code:
 <pre tabindex="0"><code>npm start
-</code></pre><p><img src="/images/3/3.png" alt="app"></p>
+</code></pre></li>
+</ol>
+<p><img alt="app" src="/images/3/3.png"></p>
 <p><em><strong>Now, you are connecting to RDS PostgreSQL by Auto-fetching instance credentials from AWS Secret Manager.</strong></em></p>
 
 <div class="notices note" ><p>If you got error when you run code. You should check AWS_regin in the AWS CLI</p>
@@ -584,7 +587,7 @@
     courses VARCHAR(150) NOT NULL,
     status VARCHAR(10) NOT NULL DEFAULT &#39;active&#39;
 ) 
-</code></pre><p><img src="/images/3/4.png" alt="app"></p>
+</code></pre><p><img alt="app" src="/images/3/4.png"></p>
 
     </div>
 </div></p>
@@ -614,7 +617,7 @@ VALUES
 (&#39;Israel&#39;, &#39;Adesanya&#39;, &#39;iadesanya@ufc.com&#39;, &#39;012345678910&#39;, &#39;AWS Certified Database – Specialty&#39;,&#39;active&#39;),
 (&#39;Henry&#39;, &#39;Cejudo&#39;, &#39;hcejudo@ufc.com&#39;, &#39;012345678910&#39;, &#39;AWS Certified Solutions Architect - Associate&#39;,&#39;active&#39;),
 (&#39;Valentina&#39;, &#39;Shevchenko&#39;, &#39;vshevchenko@ufc.com&#39;, &#39;012345678910&#39;, &#39;AWS Certified Advanced Networking - Specialty&#39;, &#39;inactive&#39;)
-</code></pre><p><img src="/images/3/5.png" alt="app"></p>
+</code></pre><p><img alt="app" src="/images/3/5.png"></p>
 
     </div>
 </div></p>
@@ -630,7 +633,7 @@ VALUES
 </li>
 </ul>
 <pre tabindex="0"><code>http://&lt;IP address or domain name&gt;:5000
-</code></pre><p><img src="/images/3/6.png" alt="app"></p>
+</code></pre><p><img alt="app" src="/images/3/6.png"></p>
 <p><em><strong>Congratulation! You have built AWS FCJ User Management System on Amazon Web Services.</strong></em></p>
 
 
@@ -844,19 +847,19 @@ VALUES
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1699108682"></script>
-    <script src="/js/perfect-scrollbar.min.js?1699108682"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1699108682"></script>
-    <script src="/js/jquery.sticky.js?1699108682"></script>
-    <script src="/js/featherlight.min.js?1699108682"></script>
-    <script src="/js/highlight.pack.js?1699108682"></script>
+    <script src="/js/clipboard.min.js?1711091711"></script>
+    <script src="/js/perfect-scrollbar.min.js?1711091711"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1711091711"></script>
+    <script src="/js/jquery.sticky.js?1711091711"></script>
+    <script src="/js/featherlight.min.js?1711091711"></script>
+    <script src="/js/highlight.pack.js?1711091711"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1699108682"></script>
-    <script src="/js/learn.js?1699108682"></script>
-    <script src="/js/hugo-learn.js?1699108682"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1711091711"></script>
+    <script src="/js/learn.js?1711091711"></script>
+    <script src="/js/hugo-learn.js?1711091711"></script>
 
-    <link href="/mermaid/mermaid.css?1699108682" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1699108682"></script>
+    <link href="/mermaid/mermaid.css?1711091711" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1711091711"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

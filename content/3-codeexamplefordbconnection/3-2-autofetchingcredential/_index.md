@@ -9,19 +9,17 @@ pre : " <b> 3.2. </b> "
 #### Deploy the example code
 
 1. To clone the repository from GitHub, you can use the following command:
-
-```
-git clone https://github.com/hiepnguyendt/Auto-fetching-instance-credentialsand-connecting.git
-```
+    ```
+    git clone https://github.com/hiepnguyendt/Auto-fetching-instance-credentialsand-connecting.git
+    ```
 
 ![autofetching](/images/2.2/1.png)
 
 2. Eit file **.env** with your database credential
+    ```
+    nano .env
 
-```
-nano .env
-
-```
+    ```
 ![autofetching](/images/2.2/2.png)
 
 - **AWS_REGION**: your region
@@ -29,11 +27,10 @@ nano .env
 ![autofetching](/images/2.2/3.png)
 
 3. Run the code:
+    ```
+    npm start
 
-```
-npm start
-
-```
+    ```
 
 ![autofetching](/images/2.2/4.png)
 

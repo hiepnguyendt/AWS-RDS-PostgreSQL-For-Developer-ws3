@@ -9,19 +9,17 @@ pre : " <b> 3.1. </b> "
 #### Deploy simple code
 
 1. To clone the repository from GitHub, you can use the following command:
-
-```
-git clone https://github.com/hiepnguyendt/sample-database-connection.git
-```
+    ```
+    git clone https://github.com/hiepnguyendt/sample-database-connection.git
+    ```
 
 ![simplecode](/images/2.1/1.png)
 
 2. Eit file **.env** with your database credential
+    ```
+    nano .env
 
-```
-nano .env
-
-```
+    ```
 ![simplecode](/images/2.2/4.png)
 
 - **DB_USER**: 'your username'  
@@ -32,10 +30,9 @@ nano .env
 ![simplecode](/images/2.1/3.png)
 
 3. Run the code:
-
-```
-npm start
-```
+    ```
+    npm start
+    ```
 
 ![simplecode](/images/2.1/2.png)
 

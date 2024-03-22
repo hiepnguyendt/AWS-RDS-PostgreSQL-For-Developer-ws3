@@ -5,6 +5,7 @@
     <link>/vi/tags/</link>
     <description>Recent content in Tags on AWS System Manager</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>vi</language><atom:link href="/vi/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>vi</language>
+    <atom:link href="/vi/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

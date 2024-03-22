@@ -5,6 +5,7 @@
     <link>/</link>
     <description>Recent content in AWS RDS PostgreSQL for Developers on AWS System Manager</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

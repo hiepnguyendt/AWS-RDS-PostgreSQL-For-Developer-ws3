@@ -26,4 +26,4 @@ Overall, AWS RDS for PostgreSQL is a powerful and flexible managed database serv
 
 - Develop and test new applications: Developers can use RDS for PostgreSQL to quickly and easily create new PostgreSQL databases for development and testing. They can then use the integrated tools to manage and monitor their databases.
 - Deploy and scale production applications: Developers can deploy their production PostgreSQL applications to RDS for PostgreSQL and scale them up or down as needed. They can also use the high availability features to ensure that their applications are always up and running.
-- Migrate existing applications to RDS: Developers can migrate their existing PostgreSQL applications to RDS for PostgreSQL with minimal downtime. They can then use the managed service features to free up their time to focus on developing and running their applications.
+- Migrate existing applications to RDS: Developers can migrate their existing PostgreSQL applications to RDS for PostgreSQL with minimal downtime. They can then use the managed service features to free up their time to focus on developing and running their applications.  

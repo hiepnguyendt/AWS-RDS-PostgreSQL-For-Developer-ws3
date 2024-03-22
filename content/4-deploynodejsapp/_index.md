@@ -20,31 +20,26 @@ A user management system is a crucial component of many web applications. It all
 #### Deploy the application
 
 1. To clone the repository from GitHub, you can use the following command:
-
-```
-git clone https://github.com/hiepnguyendt/fcj-management-user.git
-```
-
+    ```
+    git clone https://github.com/hiepnguyendt/fcj-management-user.git
+    ```
 ![app](/images/3/1.png)
 
 2. Eit file **.env** with your database credential
+    ```
+    nano .env
 
-```
-nano .env
-
-```
+    ```
 ![app](/images/3/2.png)
 
 - **AWS_REGION**: your region
-
 ![autofetching](/images/2.2/3.png)
 
 3. Run the code:
+    ```
+    npm start
 
-```
-npm start
-
-```
+    ```
 
 ![app](/images/3/3.png)
 

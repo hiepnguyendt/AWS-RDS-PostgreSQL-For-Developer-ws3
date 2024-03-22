@@ -18,6 +18,4 @@ chapter : false
 2. [Preparation step](2-preparation/)
 3. [Code example for database connection](3-codeexamplefordbconnection/)
 4. [Deploying RDS PostgreSQL application](4-deploynodejsapp/)
-5. [Monitoring & Logs](5-monitoring/)
-6. [Backup and restore](6-backup&restore/)
-7. [Clean up](7-cleanup/)
+5. [Clean up](5-cleanup/)
